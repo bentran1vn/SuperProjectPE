@@ -74,7 +74,7 @@ APP.SETTINGS <br/>
 }
 ```
 
-SetUp Trong DAO
-SetUp Trong REPO
-SetUp Trong API
+SetUp Trong DAO <br/>
+SetUp Trong REPO <br/>
+SetUp Trong API <br/>
 
