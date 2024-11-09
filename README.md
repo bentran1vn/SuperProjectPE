@@ -52,25 +52,29 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     => optionsBuilder.UseSqlServer(GetConnectionString());
 ```
 
-APPSETTINGS <br/>
+APP.SETTINGS <br/>
 ```json
 {
-"ConnectionStrings": {
-"DefaultConnectionString": "Server=(local);Database=SilverJewelry2023DB;Uid=SA;Pwd=MyStrongPass123;Trust Server Certificate=True;"
-},
-"JwtOptions": {
-"SecretKey": "IRanUIwukUBzSauFsZnr7AjV7XS96moon",
-"Issuer": "bentran1vn",
-"Audience": "bentran1vn",
-"ExpireMinutes": 120
-},
-"Logging": {
-"LogLevel": {
-"Default": "Information",
-"Microsoft.AspNetCore": "Warning"
-}
-},
-"AllowedHosts": "*"
+  "ConnectionStrings": {
+    "DefaultConnectionString": "Server=(local);Database=SilverJewelry2023DB;Uid=SA;Pwd=MyStrongPass123;Trust Server Certificate=True;"
+  },
+  "JwtOptions": {
+    "SecretKey": "IRanUIwukUBzSauFsZnr7AjV7XS96moon",
+    "Issuer": "bentran1vn",
+    "Audience": "bentran1vn",
+    "ExpireMinutes": 120
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
 }
 ```
+
+SetUp Trong DAO
+SetUp Trong REPO
+SetUp Trong API
 
