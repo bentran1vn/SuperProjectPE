@@ -1,4 +1,6 @@
-﻿namespace SuperProjectPE.BO;
+﻿using System.Text.Json.Serialization;
+
+namespace SuperProjectPE.BO;
 
 public partial class Category
 {
@@ -9,6 +11,7 @@ public partial class Category
     public string CategoryDescription { get; set; } = null!;
 
     public string? FromCountry { get; set; }
-
+    
+    [JsonIgnore]
     public virtual ICollection<SilverJewelry> SilverJewelries { get; set; } = new List<SilverJewelry>();
 }

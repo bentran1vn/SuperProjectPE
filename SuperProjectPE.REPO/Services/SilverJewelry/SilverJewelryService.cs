@@ -54,7 +54,7 @@ public class SilverJewelryService : ISilverJewelryService
         await _silverJewelryDAO.SaveChangesAsync();
     }
 
-    public async Task<List<Request.Create>> GetAll(string? searchTerm)
+    public async Task<List<BO.SilverJewelry>> GetAll(string? searchTerm)
     {
         var query = string.IsNullOrWhiteSpace(searchTerm)
             ? _silverJewelryDAO.FindAll(null, x => x.Category)
@@ -64,20 +64,22 @@ public class SilverJewelryService : ISilverJewelryService
                 , x => x.Category);
 
         var list = await query.ToListAsync();
+        
+        return list;
 
-        var result = list.Select(x => new Request.Create()
-        {
-            SilverJewelryId = x.SilverJewelryId,
-            CategoryId = x.Category.CategoryId,
-            Price = x.Price ?? 0,
-            MetalWeight = x.MetalWeight ?? 0,
-            CreatedDate = x.CreatedDate ?? DateTime.Now,
-            ProductionYear = x.ProductionYear ?? 0,
-            SilverJewelryName = x.SilverJewelryName,
-            SilverJewelryDescription = x.SilverJewelryDescription
-        }).ToList();
-
-        return result;
+        // var result = list.Select(x => new Request.Create()
+        // {
+        //     SilverJewelryId = x.SilverJewelryId,
+        //     CategoryId = x.Category.CategoryId,
+        //     Price = x.Price ?? 0,
+        //     MetalWeight = x.MetalWeight ?? 0,
+        //     CreatedDate = x.CreatedDate ?? DateTime.Now,
+        //     ProductionYear = x.ProductionYear ?? 0,
+        //     SilverJewelryName = x.SilverJewelryName,
+        //     SilverJewelryDescription = x.SilverJewelryDescription
+        // }).ToList();
+        //
+        // return result;
     }
 
     public async Task<Request.Create> GetById(string id)

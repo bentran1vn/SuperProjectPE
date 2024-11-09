@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperProjectPE.BO", "SuperP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperProjectPE.REPO", "SuperProjectPE.REPO\SuperProjectPE.REPO.csproj", "{6BB705AB-273A-4193-80FE-36A94CD11CF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperProjectPE.WEB", "SuperProjectPE.WEB\SuperProjectPE.WEB.csproj", "{65ABC784-82DD-49CB-A803-4B6F49364C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{6BB705AB-273A-4193-80FE-36A94CD11CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BB705AB-273A-4193-80FE-36A94CD11CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BB705AB-273A-4193-80FE-36A94CD11CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65ABC784-82DD-49CB-A803-4B6F49364C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65ABC784-82DD-49CB-A803-4B6F49364C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65ABC784-82DD-49CB-A803-4B6F49364C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65ABC784-82DD-49CB-A803-4B6F49364C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
